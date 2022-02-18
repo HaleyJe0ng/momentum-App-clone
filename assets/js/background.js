@@ -6,6 +6,5 @@ const bgImage = document.createElement("img");
 
 bgImage.src = `assets/img/background/${chosenImage}`;
 
-console.log(bgImage);
-
-document.body.appendChild(bgImage); // body에 html을 추가하는 코드
+document.body.style = `background: url(${bgImage.src});`;
+//document.body.appendChild(bgImage); // body에 html을 추가하는 코드

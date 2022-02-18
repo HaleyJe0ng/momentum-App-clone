@@ -1,5 +1,37 @@
-/*@import "reset.css";*/
+@import "reset.css";
+@import "variable.css";
 
 .hidden {
   display: none;
+}
+
+body {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  color: var(--main-text-color);
+}
+
+h1 {
+  font-size: 50px;
+}
+
+#clock {
+  font-size: 90px;
+}
+
+#weather {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
 }

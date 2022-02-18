@@ -1,3 +1,4 @@
+/*로그인과 동시에 quotes를 보여준다!*/
 const quotes = [
   {
     quote:
@@ -55,8 +56,8 @@ const quotes = [
 
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
-
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
+/*Quote를 그려줌*/
 quote.innerText = todaysQuote.quote;
 author.innerText = todaysQuote.author;
