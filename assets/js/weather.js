@@ -7,10 +7,17 @@ function onGeoOk(position) {
   console.log(url);
   fetch(url).then((response) =>
     response.json().then((data) => {
+      const weatherIconPan = document.createElement("img");
+      const weatherCont = document.querySelector("#weather");
       const weather = document.querySelector("#weather span:first-child");
       const city = document.querySelector("#weather span:last-child");
-      city.innerText = data.name;
-      weather.innerText = `${data.weather[0].main} ${data.main.temp}`;
+      //  var weatherIcon = data.weather[0].icon;
+      //var iconurl = "http://openweathermap.org/img/w/" + weatherIcon + ".png";
+
+      //  weatherIconPan.src = iconurl;
+      // weatherCont.appendChild(weatherIconPan);
+      weather.innerText = `${data.weather[0].main} ${data.main.temp}°C`;
+      city.innerText = ` / ${data.name}`;
     })
   );
   /*call url > google chrome 개발자도구 > Network에 들어가면 url을 요청한게 보임!

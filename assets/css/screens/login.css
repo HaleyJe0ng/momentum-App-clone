@@ -1,0 +1,56 @@
+.main--login {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__login {
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.form__login input[type="text"] {
+  width: 100%;
+  font-size: 4vw;
+}
+
+.form__login input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.9);
+}
+.form__login input[type="text"]:focus {
+  outline: none;
+  border-bottom: 4px solid var(--point-color);
+}
+
+.form__login button {
+  background: none;
+  width: 55px;
+  height: 50px;
+  border: 3px solid white;
+  padding: 4px;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  transition: all 0.4 ease-in-out;
+}
+
+.form__login button:hover {
+  color: var(--point-color);
+  animation: buttonHoverAnim 1.5s ease-in-out infinite;
+}
+
+@keyframes buttonHoverAnim {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(8px);
+  }
+  100% {
+    transform: rotateY(0);
+  }
+}

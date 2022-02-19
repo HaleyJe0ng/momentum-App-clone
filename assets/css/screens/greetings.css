@@ -1,0 +1,51 @@
+.main--greetings {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+}
+.user-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--main-color);
+}
+.user-container #clock {
+  margin-bottom: 15px;
+  font-size: 4.5em;
+}
+.user-container #greeting {
+  font-size: 2.5em;
+}
+
+.main-header {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px 5px 15px;
+  box-sizing: border-box;
+}
+
+#weather {
+  color: var(--main-color);
+}
+
+#quote {
+  color: rgba(255, 255, 255, 0.8);
+  width: 80%;
+  text-align: center;
+}
+#quote span:last-child {
+  font-style: italic;
+}
+
+#logout {
+  transition: all 0.4s ease-in-out;
+  color: var(--main-color);
+}
+#logout:hover {
+  color: rgba(255, 255, 255, 0.5);
+}

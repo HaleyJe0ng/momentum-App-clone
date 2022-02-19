@@ -1,3 +1,6 @@
 :root {
-  --main-text-color: #fafafa;
+  --main-color: #fff;
+  --point-color: #358180;
+  --todo-text-color: rgba(0, 0, 0, 0.6);
+  --todo-container-bgcolor: rgba(255, 255, 255, 0.5);
 }

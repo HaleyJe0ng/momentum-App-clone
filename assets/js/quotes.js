@@ -1,4 +1,3 @@
-/*로그인과 동시에 quotes를 보여준다!*/
 const quotes = [
   {
     quote:
